@@ -6,7 +6,31 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
+    "build:ci": "electron-builder --publish never",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.yourname.my-first-electron-app",
+    "productName": "My First Electron App",
+    "directories": {
+      "output": "dist"
+    },
+    "publish": null,
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    }
   },
   "keywords": [],
   "author": "",
