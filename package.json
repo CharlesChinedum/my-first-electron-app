@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
-    "appId": "com.yourname.my-first-electron-app",
+    "appId": "com.charles.my-first-electron-app",
     "productName": "My First Electron App",
     "directories": {
       "output": "dist"
@@ -20,7 +20,8 @@
       "target": [
         "AppImage",
         "deb"
-      ]
+      ],
+      "maintainer": "Charles Ugbor <charleschinedum2@gmail.com"
     },
     "win": {
       "target": "nsis"
@@ -33,7 +34,10 @@
     }
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Charles Ugbor",
+    "email": "charleschinedum2@gmail.com"
+  },
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
